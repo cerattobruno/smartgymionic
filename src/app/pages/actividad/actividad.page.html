@@ -1,0 +1,31 @@
+<ion-header no-border>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="tabs/tab3"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Actividad elegida</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-list lines="none">
+        <ion-item>
+            <ion-icon slot="start" color="medium" name="pin"></ion-icon>
+            <ion-label>Sucursal: 1</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-icon slot="start" color="medium" name="contacts"></ion-icon>
+            <ion-label>Capacidad: 20 personas</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-icon slot="start" color="medium" name="logo-usd"></ion-icon>
+            <ion-label>Precio mensual: $1200</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/tabs/horarios']">
+            <ion-icon slot="start" color="medium" name="time"></ion-icon>
+            <ion-label>Horarios</ion-label>
+        </ion-item>
+    </ion-list>
+
+</ion-content>
